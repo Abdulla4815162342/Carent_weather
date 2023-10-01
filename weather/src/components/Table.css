@@ -1,0 +1,32 @@
+.table {
+    text-align:left;
+    font-weight: lighter;
+}
+table.blueTable {
+    
+   
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #000000;
+    padding: 7px 2px;
+  }
+  table.blueTable tbody td {
+    font-size: 30px;
+  }
+ .oran {
+  color: rgb(226, 76, 17);
+ }
+ 
+ .para {
+  margin-top: 100px;
+    font-size: 35px;
+    font-weight: lighter;
+    color: rgb(226, 76, 17);
+ } 
+
+  
+  
