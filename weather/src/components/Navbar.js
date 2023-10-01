@@ -13,7 +13,7 @@ import Clock from './Clock';
     <h2 className='moscow'> Weather in Moscow, RU </h2>
     <Button />
     <h2 className='gradus'>12 &deg;C </h2>
-    <h3 className='broken'>Broken clouds</h3>
+    <h3 className='broken'>Broken strong</h3>
  <Clock />
 
     <Table />
