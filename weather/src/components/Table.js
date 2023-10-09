@@ -1,6 +1,6 @@
 import React from 'react'
 
- const Table = () => {
+ const Table = (props) => {
   return (
     <div className='table'>
     
@@ -13,7 +13,7 @@ import React from 'react'
     </thead>
     <tbody>
     <tr>
-    <td>Wind</td><td>Light breeze, 2.0 m/s</td></tr>
+    <td><div onClick={()=>{props.onUpdateSpeedValue()}}>Wind</div></td><td>{props.speedWind}</td></tr>
     <tr>
     <td>Pressure</td><td>1023 hpa</td></tr>
     <tr>
