@@ -1,12 +1,13 @@
 .header {
-    text-align: center;
-    font-stretch: normal;
-    font-weight:lighter;
+
+   font-family: 'Verdana';
+  font-size: 23px; 
+  height: 56px;
     
-    font-size: 65px;
+    font-size: 55px;
     color: rgb(226, 76, 17);
     padding-left: 10px;
-    padding-top: 30px;
+    padding-top: 40px;
     
 }
 
@@ -15,6 +16,8 @@
 .clock {
     color: rgb(226, 76, 17);
     font-weight:lighter;
+    font-size: 50px;
+    margin-left: -390px;
 }
 
 .wrong {
@@ -32,7 +35,7 @@ text-decoration: none;
         background: #ee430f;
         color: #fff;
         padding: 12px;
-        border-radius: 5px;
+        border-radius: 10px;
         text-decoration: none;
         font-family: Tahoma;
         font-size: 18px;
