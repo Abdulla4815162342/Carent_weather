@@ -34,9 +34,7 @@ class Clock extends Component {
                 {this.hourMin} 
               
                 
-           <li className="wrong">
-     <a  href="https://time100.ru/"  className="wrong">Wrong Time?</a>
-  </li>
+ 
 
             </h1>
         )
