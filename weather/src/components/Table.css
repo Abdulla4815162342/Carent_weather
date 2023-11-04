@@ -30,14 +30,32 @@ table.blueTable {
   }
  .oran {
   color: rgb(226, 76, 17);
+  font-weight: lighter;
+
  }
+
+
+ .sineva {
+  
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #3C5D6B;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    }
+ 
  
  .para {
   margin-top: 20px;
   text-align: center;
     font-size: 35px;
     font-weight: lighter;
-    color: rgb(226, 76, 17);
+    color: #3C5D6B;
     height: auto;
     
  } 

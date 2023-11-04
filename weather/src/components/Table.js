@@ -1,5 +1,5 @@
 import React from 'react'
-// import moment from 'moment';
+
 
 
 
@@ -8,19 +8,19 @@ import React from 'react'
 
 
 
-  let unix_timestamp = props?.widgetDataApi?.sys?.sunrise;
-  var date = new Date(unix_timestamp * 1000);
-  var hours = date.getHours();
-  var minutes = "0" + date.getMinutes();
-  var seconds = "0" + date.getSeconds();
-  var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+  const unix_timestamp = props?.widgetDataApi?.sys?.sunrise;
+  const dates = new Date(unix_timestamp * 1000);
+  const hourses = dates.getHours();
+  const minutess = "0" + dates.getMinutes();
+  const secondss = "0" + dates.getSeconds();
+  const formattedTime = hourses + ':' + minutess.substr(-2) + ':' + secondss.substr(-2);
 
-  let unix_times = props?.widgetDataApi?.sys?.sunset;
-  var date = new Date(unix_times * 1000);
-  var hours = date.getHours();
-  var minutes = "0" + date.getMinutes();
-  var seconds = "0" + date.getSeconds();
-  var formattedTimes = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+  const unix_times = props?.widgetDataApi?.sys?.sunset;
+  const date = new Date(unix_times * 1000);
+  const hours = date.getHours();
+  const minutes = "0" + date.getMinutes();
+  const seconds = "0" + date.getSeconds();
+  const formattedTimes = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
 
 
@@ -30,8 +30,8 @@ const pressure = showValues.isPressure === true ? props?.widgetDataApi?.main?.pr
 const humidity = showValues.isHumidity === true ? props?.widgetDataApi?.main?.humidity + '%' : '' 
 const sunrise = showValues.isSunrise === true ? (formattedTime) : '' 
 const sunset = showValues.isSunset === true ? (formattedTimes) : ''
-const geo = showValues.isGeo ===   true ? 'Lat' + props?.widgetDataApi?.coord?.lat  : ''
-const ge = showValues.isGeo ===    true ? 'Lot' + props?.widgetDataApi?.coord?.lon  : ''
+const geo = showValues.isGeo ===   true ? 'Lat:' + props?.widgetDataApi?.coord?.lat  : ''
+const ge = showValues.isGeo ===    true ? 'Lot:'  + props?.widgetDataApi?.coord?.lon  : ''
 
 
   return (
