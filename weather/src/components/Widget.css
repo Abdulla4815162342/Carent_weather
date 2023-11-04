@@ -1,0 +1,95 @@
+.boby {
+    float: left;
+    padding: 10px;
+    padding: 10px 600px 40px;
+
+}
+
+.moscow {
+    margin-top: 60px;
+    font-size: 55px;
+    font-weight:lighter;
+    margin-left: -250px;
+   
+   
+    
+}
+
+ .gradus {
+    padding: 1px 0px 40px;
+    font-size: 50px;
+    margin-left: -300px;
+ }
+ .broken {
+    font-size: 50px;
+    font-weight: lighter;
+    margin-left: -300px;
+    
+ }
+ .header {
+
+    font-family: 'Verdana';
+   font-size: 23px; 
+   height: 56px;
+     
+     font-size: 55px;
+     color: #3C5D6B;
+     padding-left: 10px;
+     padding-top: 40px;
+     
+ }
+ .header2 {
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: #fff; 
+   font-size: 15px; 
+   height: 40px;
+     text-decoration: none;
+     font-size: 88px;
+     color: #3C5D6B;
+     margin-left: -195px;
+     margin-top: -122px;
+ 
+ }
+ 
+ 
+   
+ 
+ .clock {
+     color:#3C5D6B;
+     font-weight:lighter;
+     font-size: 50px;
+     margin-left: -390px;
+ }
+ 
+ .wrong {
+     margin-top: -40px;
+     list-style-type:none; 
+ margin-left: 150px;
+ color: rgb(230, 84, 17);
+ text-decoration: none;
+ 
+ }
+ 
+ .button1 {
+     
+         display: inline-block;
+         background: #ee430f;
+         color: #fff;
+         padding: 12px;
+         border-radius: 10px;
+         text-decoration: none;
+         font-family: Tahoma;
+         font-size: 18px;
+         line-height: 1;
+         font-weight: 100;
+         margin-left: 100px;
+         
+       }
+       
+       div {
+         margin: 24px;
+         text-align: center;
+       }
+ 

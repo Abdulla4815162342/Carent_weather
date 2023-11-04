@@ -11,7 +11,7 @@ import {updateSunriseValue} from '../redux/actions/widget';
 import {updateSunsetValue} from '../redux/actions/widget';
 import {updateGeoValue} from '../redux/actions/widget';
 import {setWidgetData} from '../redux/actions/widget';
-// import moment from 'moment';
+
 
 class Navbar extends React.Component  {
   componentDidMount(){
@@ -20,19 +20,34 @@ class Navbar extends React.Component  {
 
   render() {
  const temp = Math.ceil (this.props?.widgetDataApi?.main?.temp )
+
+
  
 
-
-
+ 
   return (
+
+    
     <div className='boby'>
+
+    <div>
+    
+    <div className='header'>Current weather and forecasts in your city</div>
+   
+  
+  </div>
 
     <h2 className='moscow'> Weather in {this.props.cityName}, RU </h2>
     <Button />
-    <h2 className='gradus'>{temp} &deg;C </h2>
+
+   
+    <h2 className='gradus'>{temp} &deg;C </h2>  
+
     
   <Clock />
-  <h3 className='broken'>{}</h3>
+
+
+
  
   <TableWidget 
   widgetDataApi ={this.props.widgetDataApi}
@@ -46,7 +61,7 @@ class Navbar extends React.Component  {
       onUpdateSunriseValue={this.props.updateSunriseValue}
       sunset={this.props.sunset}
       onUpdateSunsetValue={this.props.updateSunsetValue}
-      geo={this.props.geo}
+      geo={this.props.widgetDataApi}
       onUpdateGeoValue={this.props.updateGeoValue}
       valuesShow={this.props.showFlagValues}
   />
@@ -62,20 +77,17 @@ class Navbar extends React.Component  {
 let mapStateToProps = (state) => {
 return {
 
-broken: state.widgetData.broken,
+
 cityName: state.widgetData.cityName,
-celsius: state.widgetData.dataWeatherWidget.celsius,
-  speedWind: state.widgetData.dataWeatherWidget.speed,
+
   showFlagValues: state.widgetData.dataWeatherWidget.showValues,
-  pressureP: state.widgetData.dataWeatherWidget.pressure,
-  humidity:  state.widgetData.dataWeatherWidget.humidity,
-  sunrise:   state.widgetData.dataWeatherWidget.sunrise,
-  sunset:    state.widgetData.dataWeatherWidget.sunset,
-  geo:      state.widgetData.dataWeatherWidget.geo,
+
   widgetDataApi: state.widgetDataApi,
 };
 }
  
+
+
 function mapDispatchToProps(dispatch) {
   return {
     
