@@ -8,3 +8,5 @@ export const weatherAPI = {
       return instance.get(`?id=${idCity}&appid=${appId}&units=${unit}`);
     },
   };
+
+  

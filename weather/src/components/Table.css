@@ -1,63 +1,46 @@
-.table {
-    text-align:center;
-    font-weight:lighter;
-    margin-left: 200px;
-    width: 100%;
-    height: auto;
 
-}
 table.blueTable {
     
-   
-    background-color: #EEEEEE;
-    width: 80%;
-    text-align:justify;
+  text-align: right;
+  display: block;
+    font-family: "Impact", "Arial", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
     border-collapse: collapse;
-    margin-top: 100px;
-    height: auto;
+    max-width: 800px;
+    
+
+    
    
   }
   table.blueTable td, table.blueTable th {
-    border: 3px solid #000000;
-    padding: 10px 7px;
-    text-align: center;
+    border: 1px solid #2d21d1;
+    padding: 20px 49px;
+    text-align: left;
     
   }
   table.blueTable tbody td {
-    font-size: 35px;
+    font-size: 2.5vb;
     
   
   }
- .oran {
-  color: rgb(226, 76, 17);
-  font-weight: lighter;
-
- }
-
-
- .sineva {
-  
-    font-family: "Times New Roman", Times, serif;
-    font-size: 30px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #3C5D6B;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-    }
- 
- 
  .para {
   margin-top: 20px;
   text-align: center;
-    font-size: 35px;
+  font-size: 2.5vb; 
     font-weight: lighter;
-    color: #3C5D6B;
+    color: #0a455e;
     height: auto;
     
  } 
 
 
+ .para1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.5vb; 
+    font-weight: lighter;
+    color: #000000;
+    height: auto;
+    
+ } 

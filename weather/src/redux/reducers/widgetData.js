@@ -80,8 +80,10 @@ export default handleActions(
   },
 
   idCity: 524901,
-  unit: 'metric',
+  unit: 'imperial',
   appId: 'd04912cef389db95d18b7df8073b26df',
   cityName: 'Moscow',
 }
 );
+
+

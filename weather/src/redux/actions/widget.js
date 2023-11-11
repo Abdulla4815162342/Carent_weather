@@ -72,7 +72,7 @@ export const setWidgetData = (unitNew, idCity, appId, dispatch) => {
    
       dispatch({
       type: GET_WIDGET_DATA,
-      payload: response.data,
+      payload: response.data
     });
     });
     

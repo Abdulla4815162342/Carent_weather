@@ -24,18 +24,19 @@ import React from 'react'
 
 
 
-  
-const speed = showValues.isSpeed === true ? props?.widgetDataApi?.wind?.speed : ''
-const pressure = showValues.isPressure === true ? props?.widgetDataApi?.main?.pressure + ' ГПа' : ''
-const humidity = showValues.isHumidity === true ? props?.widgetDataApi?.main?.humidity + '%' : '' 
-const sunrise = showValues.isSunrise === true ? (formattedTime) : '' 
-const sunset = showValues.isSunset === true ? (formattedTimes) : ''
-const geo = showValues.isGeo ===   true ? 'Lat:' + props?.widgetDataApi?.coord?.lat  : ''
-const ge = showValues.isGeo ===    true ? 'Lot:'  + props?.widgetDataApi?.coord?.lon  : ''
+
+const speed = props?.widgetDataApi?.wind?.speed
+const pressure =  props?.widgetDataApi?.main?.pressure + ' ГПа'
+const humidity = props?.widgetDataApi?.main?.humidity + '%' 
+const sunrise =  (formattedTime) 
+const sunset =  (formattedTimes) 
+const geo =   props?.widgetDataApi?.coord?.lat  
+const ge =    props?.widgetDataApi?.coord?.lon 
+ 
 
 
   return (
-    <div className='table'>
+    <div>
     
     <table className="blueTable">
     <thead>
@@ -47,17 +48,17 @@ const ge = showValues.isGeo ===    true ? 'Lot:'  + props?.widgetDataApi?.coord?
     <tbody>
     <tr>
 
-    <td><form onClick={()=> {props.onUpdateSpeedValue()}}>Wind</form></td><td>{speed}</td></tr>
+    <td><form>Wind</form></td><td>{speed}</td></tr>
     <tr>
-    <td><form  onClick={()=> {props.onUpdatePressureValue()}}>Pressure</form></td><td>{pressure}</td></tr>
+    <td><form>Pressure</form></td><td>{pressure}</td></tr>
     <tr>
-    <td><form onClick={()=> {props.onUpdateHumidityValue()}}>Humidity</form></td><td>{humidity  }</td></tr>
+    <td><form>Humidity</form></td><td>{humidity  }</td></tr>
     <tr>
-    <td><form onClick={()=> {props.onUpdateSunriseValue()}}>Sunrise</form></td><td>{sunrise}</td></tr>
+    <td><form>Sunrise</form></td><td>{sunrise}</td></tr>
     <tr>
-    <td><form onClick={()=> {props.onUpdateSunsetValue()}}>Sunset</form></td><td>{sunset}</td></tr>
+    <td><form>Sunset</form></td><td>{sunset}</td></tr>
     <tr>
-   <td><form onClick={()=> {props.onUpdateGeoValue()}}>Geo coords</form></td><td className='oran'>  {geo}  {ge}</td></tr>
+   <td><form>Geo coords</form></td><td> [{geo}]   [{ge}] </td></tr>
     
     </tbody>
    
