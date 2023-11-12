@@ -4,17 +4,30 @@ import Clock from './Clock';
 import { connect } from 'react-redux';
 import {setWidgetData} from '../redux/actions/widget';
 import { Switch} from 'antd';
-import { Link } from 'react-router-dom'
 class Navbar extends React.Component  {
+  constructor(props) {
+    super(props);
+    this.state = {unit: 'metric' };
+  }
+
 componentDidMount(){
-  this.props.setWidgetData('metric',524901,'d04912cef389db95d18b7df8073b26df')
-  // this.props.setWidgetData('imperial',524901,'d04912cef389db95d18b7df8073b26df')
+  this.props.setWidgetData(this.state.unit,524901,'d04912cef389db95d18b7df8073b26df')
 }
 
 render() {
 const temp = Math.ceil (this.props?.widgetDataApi?.main?.temp)
-const img = this.props?.widgetDataApi
-
+const img = this.props?.widgetDataApi.weather && this.props?.widgetDataApi.weather[0].icon
+const t=(a) => {
+  if (a===true) {
+    this.setState({unit: 'metric' }) 
+  } else {
+    this.setState({unit: 'imperial' }) 
+  }
+  const unit = a ? 'metric' : 'imperial'
+  this.props.setWidgetData(unit,524901,'d04912cef389db95d18b7df8073b26df')
+  
+  debugger;
+}
 
 
 
@@ -27,9 +40,9 @@ return (
     <div className='tempObject'>
     <h2 className='gradus'> {temp} &deg;C </h2> 
     <div>
-       <Switch checkedChildren="C" unCheckedChildren="F" defaultChecked handleSize={100} className='checked'/>
+       <Switch checkedChildren="C" unCheckedChildren="F" defaultChecked onChange={t} className='checked'/>
     </div>
-<div className='centr2'><img src = {`https://openweathermap.org/img/wn/04d@2x.png `} alt="img weather" /></div>
+<div className='centr2'><img src = {`https://openweathermap.org/img/wn/${img}@2x.png `} alt="img weather" /></div>
 
 </div>
 
@@ -62,7 +75,3 @@ return {
 export default connect(mapStateToProps, mapDispatchToProps)( Navbar);
 
 
-
-     // <img src={`http://openweathermap.org/img/w/${tempae}.png`} alt="img" />
-       // <img src ={(`http://openweathermap.org/img/wn/${tempae}@2x.png 2x`)} alt="img" />
-             // <img src = {`http://openweathermap.org/img/wn/${icon}@2x.png 2x`} alt="img weather" />
