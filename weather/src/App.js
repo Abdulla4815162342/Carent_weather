@@ -1,16 +1,11 @@
-
-import "./components/Widget.css"
-import "./components/Table.css"
-import "./App.css"
-import  {Headers}  from "./components/Headers"
-
-
+import { Headers } from "./components/Headers";
+import styles from "./App.module.css";
 
 function App() {
-    return (
-  <div className="App">
-  <Headers/>        
-  </div> 
+  return (
+    <div className={styles.App}>
+      <Headers />
+    </div>
   );
 }
 
